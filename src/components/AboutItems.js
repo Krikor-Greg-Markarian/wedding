@@ -1,5 +1,6 @@
 import React from "react";
 import cn from "classnames";
+import ReadMoreButton from "./ReadMoreButton";
 
 function AboutItems(props) {
   return (
@@ -11,7 +12,7 @@ function AboutItems(props) {
         <div className={cn("flex-shrink pl-3")}>
          <p className = {cn("italic 2xl")}>{props.title}</p>
          <p className= {cn("text-sm text-gray-500")}>{props.description}</p>
-         <p className={cn("text-sm text-red-500")}>{props.readMore}</p>
+         <ReadMoreButton className = {cn("text-red-500 text-sm")} ReadMoreButtonName={"READ MORE"} />
         </div>
        
       </div>
