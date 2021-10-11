@@ -10,10 +10,10 @@ import Link from "next/link";
 
 function Footer(props) {
   return (
-    <div className={cn("bg-black py-8")}>
+    <div className={cn("bg-black py-16")}>
       <div className={cn("container mx-auto")}>
         <div className={cn("flex justify-center items-center")}>
-          <p className={cn("text-white text-2xl pb-4")}>
+          <p className={cn("text-white text-lg font-bold pb-4")}>
             {props.GroomBrideName}
           </p>
         </div>
@@ -75,7 +75,7 @@ function Footer(props) {
             </Link>
           </li>
         </div>
-        <div className={cn("flex justify-center items-center")}>
+        <div className={cn("flex justify-center items-center pt-4")}>
           <p className={cn("inline text-sm text-gray-500")}>
             {props.marriageInfo}
           </p>
