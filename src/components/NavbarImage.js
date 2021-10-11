@@ -18,7 +18,7 @@ function NavbarImage(props) {
             </Link>
           </li>
           <li className={cn("inline text-white pl-10 text-sm hover:text-red-500")}>
-            <Link href="/">
+            <Link href="journal">
               <a href="">{props.journalNavbar}</a>
             </Link>
           </li>
