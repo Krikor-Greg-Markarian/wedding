@@ -10,7 +10,7 @@ import Link from "next/link";
 
 function Footer(props) {
   return (
-    <div className={cn("bg-black py-16")}>
+    <div className={cn("bg-black py-24")}>
       <div className={cn("container mx-auto")}>
         <div className={cn("flex justify-center items-center")}>
           <p className={cn("text-white text-lg font-bold pb-4")}>
