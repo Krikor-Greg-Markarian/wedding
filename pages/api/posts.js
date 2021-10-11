@@ -37,6 +37,65 @@ export default function handler(req, res) {
         ReadMoreButtonName: "READ MORE",
       },
     ],
+    about: [
+      {
+        imageUrlSara:
+          "https://cdn.pixabay.com/photo/2017/04/05/10/45/girl-2204622__340.jpg",
+        girlName: "about Sarah",
+        text: "Believe in yourself! Have faith in your abilities! Without a humble but reasonable confidence in your own powers you cannot be successful or happy.",
+      },
+    ],
+    latestItems: [
+      {
+        imageUrl:
+          "https://cdn.pixabay.com/photo/2015/09/02/13/04/marriage-918864__340.jpg",
+
+        text: "Let us always meet each other with smile, for the smile is the beginning of love.",
+      },
+      {
+        imageUrl:
+          "https://cdn.pixabay.com/photo/2016/10/26/07/56/wedding-1770860__340.jpg",
+
+        text: "Love is when the other person’s happiness is more important than your own.",
+      },
+      {
+        imageUrl:
+          "https://cdn.pixabay.com/photo/2016/11/18/22/21/bride-1837148__340.jpg",
+
+        text: "Being deeply loved by someone gives you strength, while loving gives you courage.",
+      },
+    ],
+    popularItems: [
+      {
+        text1: "best selling wordpress theme",
+        text2: "best wedding theme",
+        text3: "couple theme",
+        text4: "love",
+        text5: "marriage",
+        text6: "marriage theme",
+        text7: "top wedding theme",
+        text8: "wedding design",
+        text9: "wedding theme",
+        text10: "wedding wordpress theme",
+      },
+    ],
+    recentItems: [
+      {
+        text1:
+          "Admin on Let us always meet each other with smile, for the smile is the beginning of love.",
+        text2:
+          "Admin on Let us always meet each other with smile, for the smile is the beginning of love.",
+        text3:
+          "Admin on Let us always meet each other with smile, for the smile is the beginning of love.",
+        text4: "A WordPress Commenter on Hello world!",
+      },
+    ],
+    archivesItem: [
+      {
+        date: "November 2017",
+        anotherDate: "june 2017",
+      },
+    ],
   };
 
   res.status(200).json(data);
