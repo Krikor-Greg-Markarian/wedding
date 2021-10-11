@@ -4,9 +4,9 @@ import ReadMoreButton from "./ReadMoreButton";
 
 function WeddingItem(props) {
   return (
-    <div>
-      <p className={cn("font-bold text-2xl")}>{props.title}</p>
-      <img className={cn("w-full pt-3")} src={props.imageUrl} alt="" />
+    <div className={cn("pb-20 pt-3")}>
+      <p className={cn("font-bold")}>{props.title}</p>
+      <img className={cn(" w-full pt-3")} src={props.imageUrl} alt="" />
       <p className={cn("text-sm text-gray-500 pt-4")}>{props.description}</p>
       <div className={cn("flex justify-center items-center")}>
         <ReadMoreButton
