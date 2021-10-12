@@ -32,6 +32,7 @@ export default function Home(props) {
                 imageUrl={item.imageUrl}
                 title={item.title}
                 description={item.description}
+                ReadMoreButtonName={item.ReadMoreButtonName}
               />
             </div>
           ))}
