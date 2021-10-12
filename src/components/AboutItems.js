@@ -7,9 +7,9 @@ function AboutItems(props) {
     <div className={cn("flex pt-14")}>
       <div className={cn("flex-shrink")}>
         <img
-          className={cn("rounded-full w-60 h-20 pt-2")}
+          className={cn("rounded-full")}
           src={props.imageUrl}
-          alt=""
+          alt="sara and michael picture"
         />
       </div>
       <div className={cn("flex-shrink pl-3")}>
