@@ -10,7 +10,7 @@ export default function handler(req, res) {
         posted: "POSTED IN",
         journal: "JOURNAL",
         imageUrl:
-          "https://cdn.pixabay.com/photo/2019/11/10/11/13/couple-4615557__340.jpg",
+          "http://themes.sindevo.com/marriage-full/wp-content/uploads/2017/11/slider2.jpg",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         ReadMoreButtonName: "READ MORE",
       },
@@ -21,7 +21,7 @@ export default function handler(req, res) {
         posted: "POSTED IN",
         journal: "JOURNAL",
         imageUrl:
-          "https://cdn.pixabay.com/photo/2021/09/06/05/55/love-6600904__340.jpg",
+          "http://themes.sindevo.com/marriage-full/wp-content/uploads/2017/11/slider3.jpg",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, seddo eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat. Sed utperspiciatis unde omnis iste natus error sit voluptatemaccusantium doloremque laudantium, totam rem aperiam, eaqueipsa quae ab illo inventore veritatis et quasi architectobeatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatemquia voluptas sit aspernatur aut odit aut fugit, sed quiaconsequuntur magni dolores eos qui ratione voluptatem sequinesciunt. Neque porro quisquam est, qui dolorem ipsum quiadolor sit amet, consectetur, adipisci velit, sed quia nonnumquam eius modi tempora incidunt ut labore et dolore magnamaliquam quaerat voluptatem. Ut enim ad minima veniam, quisnostrum exercitationem ullam corporis suscipit laboriosam,nisi ut aliquid ex ea commodi consequatur? Quis autem vel eumiure reprehenderit qui in ea voluptate velit esse quam nihilmolestiae consequatur, vel illum qui dolorem eum fugiat quovoluptas nulla.",
         ReadMoreButtonName: "READ MORE",
       },
@@ -40,7 +40,7 @@ export default function handler(req, res) {
     about: [
       {
         imageUrlSara:
-          "https://cdn.pixabay.com/photo/2017/04/05/10/45/girl-2204622__340.jpg",
+          "http://themes.sindevo.com/marriage-new/wp-content/uploads/2017/11/about_f.jpg",
         girlName: "about Sarah",
         text: "Believe in yourself! Have faith in your abilities! Without a humble but reasonable confidence in your own powers you cannot be successful or happy.",
       },
@@ -48,19 +48,19 @@ export default function handler(req, res) {
     latestItems: [
       {
         imageUrl:
-          "https://cdn.pixabay.com/photo/2015/09/02/13/04/marriage-918864__340.jpg",
+          "http://themes.sindevo.com/marriage-full/wp-content/uploads/2017/11/thumb1.jpg",
 
         text: "Let us always meet each other with smile, for the smile is the beginning of love.",
       },
       {
         imageUrl:
-          "https://cdn.pixabay.com/photo/2016/10/26/07/56/wedding-1770860__340.jpg",
+          "http://themes.sindevo.com/marriage-full/wp-content/uploads/2017/11/thumb2.jpg",
 
         text: "Love is when the other person’s happiness is more important than your own.",
       },
       {
         imageUrl:
-          "https://cdn.pixabay.com/photo/2016/11/18/22/21/bride-1837148__340.jpg",
+          "http://themes.sindevo.com/marriage-full/wp-content/uploads/2017/11/thumb3.jpg",
 
         text: "Being deeply loved by someone gives you strength, while loving gives you courage.",
       },
