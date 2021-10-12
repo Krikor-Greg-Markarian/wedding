@@ -10,8 +10,8 @@ function WeddingItem(props) {
       <p className={cn("text-sm text-gray-500 pt-4")}>{props.description}</p>
       <div className={cn("flex justify-center items-center")}>
         <ReadMoreButton
-          className={cn("text-red-500 pt-4 text-sm")}
-          ReadMoreButtonName={"READ MORE"}
+          className={cn("text-red-600 pt-4 text-sm")}
+          ReadMoreButtonName={props.ReadMoreButtonName}
         />
       </div>
     </div>

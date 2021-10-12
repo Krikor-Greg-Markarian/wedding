@@ -16,8 +16,7 @@ function AboutItems(props) {
         <p className={cn("italic 2xl ")}>{props.title}</p>
         <p className={cn("text-sm text-gray-500 pt-2")}>{props.description}</p>
         <ReadMoreButton
-          className={cn("text-red-500 text-sm pt-5")}
-          ReadMoreButtonName={"READ MORE"}
+          className={cn("text-red-600 text-sm pt-5")}ReadMoreButtonName={props.ReadMoreButtonName}
         />
       </div>
     </div>

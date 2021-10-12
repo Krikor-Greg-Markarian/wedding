@@ -17,7 +17,7 @@ function BrideGroomItem(props) {
         <p className={cn("font-bold text-sm")}>{props.name}</p>
       </div>
       <div className={cn("flex justify-center items-center")}>
-        <p className={cn("text-red-500 text-sm")}>{props.description}</p>
+        <p className={cn("text-red-600 text-sm")}>{props.description}</p>
       </div>
     </div>
   );

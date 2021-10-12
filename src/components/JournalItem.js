@@ -12,7 +12,7 @@ function JournalItem(props) {
       <a className={cn("")} href="/">
         <p
           className={cn(
-            "text-red-500 text-sm pt-4 font-bold hover:text-black transition duration-500 ease-in-out transform "
+            "text-red-600 text-sm pt-4 font-bold hover:text-black transition duration-500 ease-in-out transform "
           )}
         >
           {props.description}

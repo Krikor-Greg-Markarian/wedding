@@ -2,8 +2,6 @@ import cn from "classnames";
 import axios from "axios";
 import NavbarTwo from "../src/components/NavbarTwo";
 import JournalSection from "../src/components/JournalSection";
-import AboutItems from "../src/components/AboutItems";
-import Videos from "../src/components/Videos";
 import AboutHorizontal from "../src/components/AboutHorizontal";
 import LatestItem from "../src/components/LatestItem";
 import PopularItems from "../src/components/PopularItems";
@@ -25,7 +23,7 @@ export default function Home(props) {
             contactNavbar={"CONTACT"}
           />
           <div className={cn("flex justify-center items-center")}>
-            <div className={cn("absolute top-20 py-20 bg-white w-11/12")}>
+            <div className={cn("absolute top-20 py-20 bg-white w-9/12")}>
               <div className={cn("p-8")}>
                 <div className={cn("flex justify-center items-center")}>
                   <p className={cn("font-bold text-2xl")}>
@@ -50,8 +48,11 @@ export default function Home(props) {
                         imageUrl={item.imageUrl}
                         text={item.text}
                         ReadMoreButtonName={item.ReadMoreButtonName}
+                        videoUrl={item.videoUrl}
+                        isVideo={item.isVideo}
                       />
                     ))}
+                    
                   </div>
 
                   <section className={cn("pl-24 w-11/12 pt-20")}>
@@ -74,7 +75,7 @@ export default function Home(props) {
                         text={item.text}
                       />
                     ))}
-                    <section className={cn("pt-28")}>
+                    <section className={cn("pt-28 ")}>
                       <p className={cn("font-bold pb-5")}>Popular Tags</p>
                       {props.popularItems.map((item, idx) => (
                         <PopularItems

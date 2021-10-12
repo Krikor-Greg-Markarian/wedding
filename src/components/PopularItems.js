@@ -4,6 +4,7 @@ import cn from "classnames";
 function PopularItems(props) {
   return (
     <div>
+     
       <p
         className={cn(
           "text-red-600 hover:text-black bg-gray-100 p-1 w-5/12 text-center rounded-lg mt-1 mb-1 text-xs"
@@ -18,6 +19,7 @@ function PopularItems(props) {
       >
         {props.text2}
       </p>
+      
       <p
         className={cn(
           "text-red-600 hover:text-black bg-gray-100 p-1 w-6/12 text-center rounded-lg mt-1 mb-1 inline text-xs"

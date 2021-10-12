@@ -9,6 +9,7 @@ export default function handler(req, res) {
         title: "about Sarah",
         description:
           "Love is friendship that has caught fire. It is quiet understanding, sharing and forgiving. It is loyalty through good and bad times. It settles for less than perfection and makes allowances for human weaknesses",
+        ReadMoreButtonName: "READ MORE",
       },
       {
         imageUrl:
@@ -16,6 +17,7 @@ export default function handler(req, res) {
         title: "about michael",
         description:
           "Friends can help each other. A true friend is someone who lets you have total freedom to be yourself – and especially to feel. Or, not feel. Whatever you happen to be feeling at the moment is fine with them.",
+        ReadMoreButtonName: "READ MORE",
       },
     ],
     weddingItem: [

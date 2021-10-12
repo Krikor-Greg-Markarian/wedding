@@ -1,6 +1,7 @@
 import React from "react";
 import cn from "classnames";
 import ReadMoreButton from "./ReadMoreButton";
+import Videos from "./Videos";
 
 function JournalSection(props) {
   return (
@@ -10,12 +11,17 @@ function JournalSection(props) {
       <p className={cn("text-gray-500 inline text-xs")}>{props.posted}</p>
       <p className={cn("text-red-600 inline pl-1 text-xs")}>{props.journal}</p>
 
-      <img className={cn("w-full pt-3")} src={props.imageUrl} alt="" />
+      {props.isVideo ? (
+        <Videos videoUrl={props.videoUrl} />
+      ) : (
+        <img className={cn("w-full pt-3")} src={props.imageUrl} alt="" />
+      )}
+
       <p className={cn("text-gray-500 text-sm pt-4")}>{props.text}</p>
       <div className={cn("flex justify-center items-center")}>
         <ReadMoreButton
           className={cn("text-red-600 text-sm pt-6")}
-          ReadMoreButtonName={"READ MORE"}
+          ReadMoreButtonName={props.ReadMoreButtonName}
         />
       </div>
     </div>
