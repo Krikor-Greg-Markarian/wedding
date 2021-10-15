@@ -7,7 +7,7 @@ function BrideGroomItem(props) {
       <div className={cn("flex justify-center items-center")}>
         <img
           className={cn(
-            "rounded-full w-40 h-40 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+            "rounded-full w-40 h-40 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
           )}
           src={props.imageUrl}
           alt="bridesmaid image"
