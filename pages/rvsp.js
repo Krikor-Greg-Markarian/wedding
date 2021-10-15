@@ -3,6 +3,10 @@ import axios from "axios";
 import NavbarPhotos from "../src/components/NavbarPhotos";
 import Footer from "../src/components/Footer";
 import ReadMoreButton from "../src/components/ReadMoreButton";
+import LatestJournalStories from "../src/components/LatestJournalStories";
+import { FaRegComment } from "react-icons/fa";
+import RecentComment from "../src/components/RecentComment";
+import Calendar from "react-calendar";
 
 export default function Home(props) {
   return (
@@ -27,8 +31,8 @@ export default function Home(props) {
           Répondez S’il Vous Plaît
         </p>
         <div className={cn("border-2")}></div>
-        <div className={cn("grid grid-cols-2")}>
-          <div className={cn("col-span-1")}>
+        <div className={cn("grid grid-cols-3")}>
+          <div className={cn("col-span-2")}>
             <p className={cn("text-red-500 border-b-2 pt-12 pb-4")}>
               GET IN TOUCH
             </p>
@@ -77,7 +81,7 @@ export default function Home(props) {
                 className={cn("bg-transparent border-2 mt-3")}
                 name=""
                 id=""
-                cols="77"
+                cols="103"
                 rows="10"
               ></textarea>
             </div>
@@ -105,6 +109,31 @@ export default function Home(props) {
               </div>
             </div>
           </div>
+          <div className={cn("col-span-1 pl-20 w-11/12")}>
+            <p className={cn("font-bold")}>Latest Journal Stories</p>
+            {props.latestjournalstories.map((item, idx) => (
+              <LatestJournalStories
+                key={idx}
+                imageURl={item.imageURl}
+                text={item.text}
+              />
+            ))}
+            <div>
+              <p className={cn("font-bold pb-5 pt-14")}>Recent Comments</p>
+              {props.recentItems.map((item, idx) => (
+                <RecentComment
+                  key={idx}
+                  text1={item.text1}
+                  text2={item.text2}
+                  text3={item.text3}
+                  text4={item.text4}
+                />
+              ))}
+            </div>
+            <div className={cn("pt-12")}>
+              <Calendar />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -129,8 +158,8 @@ export async function getServerSideProps(context) {
 
   return {
     props: {
-      //   journalSection: response.data.journalSection,
-      //   ourPhotoGallery: response.data.ourPhotoGallery,
+      latestjournalstories: response.data.latestjournalstories,
+      recentItems: response.data.recentItems,
     }, // will be passed to the page component as props
   };
 }
