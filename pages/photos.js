@@ -74,7 +74,7 @@ export default function Home(props) {
         </div>
       </section>
       <section className={cn("p-9")}>
-        <div className={cn("grid grid-cols-3 gap-8")}>
+        <div className={cn("grid md:grid-cols-3 gap-8")}>
           {props.ourPhotoGallery.map((item, idx) => (
             <div className={cn("col-span-1")}>
               <OurPhotoGallery
