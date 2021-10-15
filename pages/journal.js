@@ -15,7 +15,7 @@ export default function Home(props) {
       <div>
         <section className={cn("relative")}>
           <NavbarTwo
-            homeNavbar={"Home"}
+            homeNavbar={"HOME"}
             theWeddingNavbar={"THE WEDDING"}
             journalNavbar={"JOURNAL"}
             photosNavbar={"PHOTOS"}
@@ -52,10 +52,9 @@ export default function Home(props) {
                         isVideo={item.isVideo}
                       />
                     ))}
-                    
                   </div>
 
-                  <section className={cn("pl-24 w-11/12 pt-20")}>
+                  <section className={cn(" pl-24 w-11/12 pt-20")}>
                     <div className={cn("mb-12")}>
                       {props.about.map((item, idx) => (
                         <AboutHorizontal
