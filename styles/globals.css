@@ -25,6 +25,17 @@ body {
   height: 180px;
 }
 
+
+
+.oliveleaves {
+  background-image: url("https://cdn.pixabay.com/photo/2016/10/20/20/46/olive-tree-1756611__340.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  width: 100%;
+  height: 70px;
+}
+
 input[type="text"] {
   border-bottom: 1px solid rgb(190, 190, 190);
 }
