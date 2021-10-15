@@ -31,7 +31,7 @@ function NavbarImage(props) {
               "inline text-white pl-10  text-sm hover:text-red-600"
             )}
           >
-            <Link href="/">
+            <Link href="photos">
               <a href="">{props.photosNavbar}</a>
             </Link>
           </li>
@@ -40,7 +40,7 @@ function NavbarImage(props) {
               "inline text-white pl-10  text-sm hover:text-red-600"
             )}
           >
-            <Link href="/">
+            <Link href="rvsp">
               <a href="">{props.rvspNavbar}</a>
             </Link>
           </li>

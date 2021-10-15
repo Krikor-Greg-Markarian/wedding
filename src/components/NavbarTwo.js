@@ -15,7 +15,7 @@ function NavbarTwo(props) {
           <li
             className={cn("inline text-white pl-10 text-sm hover:text-red-600")}
           >
-            <Link href="/">
+            <Link href="thewedding">
               <a href="">{props.theWeddingNavbar}</a>
             </Link>
           </li>
@@ -23,7 +23,7 @@ function NavbarTwo(props) {
             className={cn("inline text-white pl-10 text-sm hover:text-red-600")}
           >
             <Link href="journal">
-              <a href="">{props.journalNavbar}</a>
+              <a href="journal">{props.journalNavbar}</a>
             </Link>
           </li>
           <li
@@ -31,7 +31,7 @@ function NavbarTwo(props) {
               "inline text-white pl-10  text-sm hover:text-red-600"
             )}
           >
-            <Link href="/">
+            <Link href="photos">
               <a href="">{props.photosNavbar}</a>
             </Link>
           </li>
@@ -40,7 +40,7 @@ function NavbarTwo(props) {
               "inline text-white pl-10  text-sm hover:text-red-600"
             )}
           >
-            <Link href="/">
+            <Link href="rvsp">
               <a href="">{props.rvspNavbar}</a>
             </Link>
           </li>
