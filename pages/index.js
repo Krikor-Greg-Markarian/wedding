@@ -40,7 +40,7 @@ export default function Home(props) {
       </section>
 
       <section className={cn("pt-20 pb-20")}>
-        <div className={cn("bg-green-100 py-24")}>
+        <div className={cn("bg-green-100 py-36")}>
           <div className={cn("flex justify-center items-center")}>
             <Button
               className={cn(
