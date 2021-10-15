@@ -31,7 +31,7 @@ export default function Home(props) {
           Répondez S’il Vous Plaît
         </p>
         <div className={cn("border-2")}></div>
-        <div className={cn("grid grid-cols-3")}>
+        <div className={cn("grid md:grid-cols-3")}>
           <div className={cn("col-span-2")}>
             <p className={cn("text-red-500 border-b-2 pt-12 pb-4")}>
               GET IN TOUCH
@@ -78,7 +78,7 @@ export default function Home(props) {
               </label>
 
               <textarea
-                className={cn("bg-transparent border-2 mt-3 w-full")}
+                className={cn("bg-transparent border-2 mt-3 w-full focus:outline-none")}
                 name=""
                 id=""
                 cols="103"
