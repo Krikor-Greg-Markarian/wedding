@@ -48,14 +48,14 @@ function Footer(props) {
           </li>
           <li className={cn("inline")}>
             <Link href="">
-              <a className={cn("text-red-600 text-sm pl-6")} href="/">
+              <a className={cn("text-red-600 text-sm pl-6")} href="photos">
                 {props.photos}
               </a>
             </Link>
           </li>
           <li className={cn("inline")}>
             <Link href="">
-              <a className={cn("text-red-600 text-sm pl-6")} href="/">
+              <a className={cn("text-red-600 text-sm pl-6")} href="journal">
                 {props.journal}
               </a>
             </Link>
