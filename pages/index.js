@@ -13,7 +13,7 @@ export default function Home(props) {
     <div>
       <section>
         <NavbarImage
-          homeNavbar={"Home"}
+          homeNavbar={"HOME"}
           theWeddingNavbar={"THE WEDDING"}
           journalNavbar={"JOURNAL"}
           photosNavbar={"PHOTOS"}
