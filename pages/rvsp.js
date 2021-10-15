@@ -78,7 +78,7 @@ export default function Home(props) {
               </label>
 
               <textarea
-                className={cn("bg-transparent border-2 mt-3")}
+                className={cn("bg-transparent border-2 mt-3 w-full")}
                 name=""
                 id=""
                 cols="103"
