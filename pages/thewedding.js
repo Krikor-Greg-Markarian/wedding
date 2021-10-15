@@ -3,6 +3,9 @@ import axios from "axios";
 import NavbarTwo from "../src/components/NavbarTwo";
 import JournalSection from "../src/components/JournalSection";
 import TheItems from "../src/components/TheItems";
+import LatestJournalStories from "../src/components/LatestJournalStories";
+import RecentComment from "../src/components/RecentComment";
+import Calendar from "react-calendar";
 
 export default function Home(props) {
   return (
@@ -59,6 +62,39 @@ export default function Home(props) {
                     </div>
                   </div>
 
+                  <section className={cn("flex justify-end pt-24")}>
+                    <div className={cn("w-10/12")}>
+                      <p className={cn("font-bold ")}>
+                        Latest Journal Stories{" "}
+                      </p>
+                      {props.latestjournalstories.map((item, idx) => (
+                        <LatestJournalStories
+                          key={idx}
+                          imageURl={item.imageURl}
+                          text={item.text}
+                        />
+                      ))}
+                      <section>
+                        <p className={cn("font-bold pb-5 pt-14")}>
+                          Recent Comments
+                        </p>
+                        {props.recentItems.map((item, idx) => (
+                          <RecentComment
+                            key={idx}
+                            text1={item.text1}
+                            text2={item.text2}
+                            text3={item.text3}
+                            text4={item.text4}
+                          />
+                        ))}
+                        <input type="calendare" name="" id="" />
+                      </section>
+                      <section className={cn("pt-4")}>
+                        <Calendar />
+                      </section>
+                    </div>
+                  </section>
+
                   <section className={cn("container mx-auto")}>
                     {/* second section left part */}
                   </section>
@@ -79,6 +115,8 @@ export async function getServerSideProps(context) {
     props: {
       journalSection: response.data.journalSection,
       theitem: response.data.theitem,
+      latestjournalstories: response.data.latestjournalstories,
+      recentItems: response.data.recentItems,
     }, // will be passed to the page component as props
   };
 }
